@@ -3,265 +3,119 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="/assets/favicon_io/site.webmanifest">
 
-    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
-
-    <title>Portfolio</title>
+    <link rel="stylesheet" href="/css/grade.css">
+    <link rel="stylesheet" href="/css/drop.css">
+    <link rel="stylesheet" href="/css/reset.css">   
+    <link rel="stylesheet" href="/css/style.css">
+    <script defer src="/js/main.js"></script>
+    <title>Márcio J Carvalho</title>
 </head>
 
 <body>
+    <header>
+        <div class="matriz">
+            <div class="card-home">
+                <div class="linha">
+                    <div class="coluna-12">
+                        <div class="navbar" id="navbar">
+                            <div class="itens-menu">
+                                <div class="logo">
+                                    <a href="#">mjc.</a>
+                                </div>
+                                <nav>
+                                    <ul>
+                                        <li><a href="#">inicio</a></li>
+                                        <li>|</li>
+                                        <li><a href="#projects">prjetos</a></li>
+                                        <li>|</li>
+                                        <li><a href="#">sobre</a></li>
+                                        <li>|</li>
+                                        <li><a href="#">conhecmentos</a></li>
+                                        <li>|</li>
+                                        <li><a href="#">contato</a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="linha">
+                    <div class="coluna-12">
+                        <div class="descricao">
+                            <h1>
+                                Olá,<br>
+                                Eu sou <b>Márcio</b>,<br>
+                                Software engineer.
+                            </h1>
+                            <p>
+                                Sou estudante e pretendo me tornar um engenheiro de software, gosto de construir coisas usando a tecnologia para melhorar a interação humana. Atualmente, estou focado em desenvolver um produto baseado na experiência do usuário.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="coluna-4">
+                        <div class="avatar">
+                            <img src="/assets/ph.png" alt="foto de perfil do Márcio">
+                        </div>
+                    </div>
+                </div>
+                <div class="linha">
+                    <div class="coluna-12">
+                        <div class="social">
+                            <ul>
+                                <li><a href="#"><img src="/assets/Icons/Pixels/Pixelart_Icons_by_ReffSQ_v1/Pixelart_Icons_by_ReffSQ/ico/Facebook.ico" alt=""></a></li>
+                                <li><a href="#"><img src="/assets/Icons/Pixels/Pixelart_Icons_by_ReffSQ_v1/Pixelart_Icons_by_ReffSQ/ico/Instagram_1.ico" alt=""></a></li>
+                                <li><a href="#"><img src="/assets/Icons/Pixels/Pixelart_Icons_by_ReffSQ_v1/Pixelart_Icons_by_ReffSQ/ico/Twitter.ico" alt=""></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
 
-    <div class="container">
-
-        <!-- icone menu -->
-        <div class="hamburguer">
-            <div class="line" id="line1"></div>
-            <div class="line" id="line2"></div>
-            <div class="line" id="line3"></div>
-            <span>fechar</span>
+            </div>
         </div>
-
-
-        <!-- top banner -->
-        <header id="home">
-            <div class="img-wrapper">
-                <img src="img/bg.jpg" alt="imagem do background">
-            </div>
-            <div class="banner">
-                <h1>Web Developer & Front End Designer</h1>
-                <p>Márcio José de Carvalho</P>
-                <button>Saiba mais</button>
-            </div>
-        </header>
-
-        <!-- sidebar -->
-        <aside class="sidebar">
-            <nav>
-                <ul class="menu">
-                    <li class="menu-item"><a href="#" class="menu-link">Home</a></li>
-                    <li class="menu-item"><a href="#conhecimentos" class="menu-link">Conhecimento</a></li>
-                    <li class="menu-item"><a href="#projetos" class="menu-link">Projetos</a></li>
-                    <li class="menu-item"><a href="#contatos" class="menu-link">Contatos</a></li>
-                    <li class="menu-item"><a href="#orcamento" class="menu-link">Orçamento</a></li>
-                </ul>
-            </nav>
-            <div class="social-media">
-                <a href="https://www.facebook.com/MarcioS2Joice"><i class="ico ion-social-facebook-outline"></i></a>
-                <a href="https://www.instagram.com/marciojcarvalho88/"><i class="ico ion-social-instagram-outline"></i></a>
-                <a href="https://api.whatsapp.com/send?phone=5544991485633&text=Deixe%20sua%20mensagem"><i class="ico ion-social-whatsapp-outline"></i></a>
-                <a href="https://twitter.com/Marciomoska"><i class="ico ion-social-twitter-outline"></i></a>
-                <a href="https://github.com/MarcioJCarvalho"><i class="ico ion-social-github-outline"></i></a>
-            </div>
-        </aside>
-
-        <!-- conhecimentos -->
-        <section class="sessao-conhecimentos" id="conhecimentos">
-            <div class="sessao-header">
-                <h1>conhecimentos</h1>
-            </div>
-            <div class="conhecimentos">
-                <div class="conhecimento">
-                    <div class="conhecimento-header">
-                        <i class="fab ion-social-html5"></i>
-                        <h3>html</h3>
-                    </div>
-                    <div class="conhecimento-text">
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem sit voluptatem placeat
-                            eligendi sed, deleniti reiciendis pariatur fugit quaerat quae totam neque natus est
-                            necessitatibus voluptatum minima quibusdam molestiae voluptas.</p>
-                    </div>
-                </div>
-                <div class="conhecimento">
-                    <div class="conhecimento-header">
-                        <i class="ico ion-social-css3"></i>
-                        <h3>css</h3>
-                    </div>
-                    <div class="conhecimento-text">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, dolorum aperiam? Deserunt
-                            distinctio harum consequatur suscipit rem dolorum dolor quo soluta eum. Minima repudiandae
-                            alias necessitatibus sint consequatur. Rem, harum?</p>
-                    </div>
-                </div>
-                <div class="conhecimento">
-                    <div class="conhecimento-header">
-                        <i class="ico ion-social-javascript"></i>
-                        <h3>java script</h3>
-                    </div>
-                    <div class="conhecimento-text">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam repudiandae quas
-                            aspernatur qui quos reprehenderit? Consequatur vero quam doloremque cupiditate delectus quis
-                            consequuntur, deleniti tenetur possimus eum exercitationem ipsa mollitia.</p>
-                    </div>
-                </div>
-                <div class="conhecimento">
-                    <div class="conhecimento-header">
-                        <i class="ico ion-edit"></i>
-                        <h3>design</h3>
-                    </div>
-                    <div class="conhecimento-text">
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium ab doloribus vero culpa
-                            incidunt ad id molestias aliquam maiores quo ipsum debitis ipsa eaque dicta voluptatibus
-                            voluptatem, aspernatur rem dolores.</p>
-                    </div>
-                </div>
-                <div class="conhecimento">
-                    <div class="conhecimento-header">
-                        <i class="ico bi-bootstrap-fill"></i>
-                        <h3>bootstrap</h3>
-                    </div>
-                    <div class="conhecimento-text">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem officiis a excepturi illo
-                            vitae rerum quam? Aliquam vel deserunt deleniti voluptas illum totam amet? Quaerat ipsum
-                            voluptate tenetur dolor nisi!</p>
-                    </div>
-                </div>
-                <div class="conhecimento">
-                    <div class="conhecimento-header">
-                        <i class="ico ion-social-github"></i>
-                        <h3>git & github</h3>
-                    </div>
-                    <div class="conhecimento-text">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum quis deserunt id atque inventore
-                            nisi ipsam, temporibus dolor quidem quas unde aliquam earum harum nulla modi repudiandae
-                            dignissimos, laboriosam esse.</p>
-                    </div>
-                </div>
-                <div class="conhecimento-img-wrapper">
-                    <img src="img/business.jpg" alt="imagem conhecimento">
-                </div>
-            </div>
-        </section>
-
-        <!-- projetos -->
-        <section class="sessao-projetos" id="projetos">
-            <div class="sessao-header">
-                <h1>projetos</h1>
-            </div>
-            <div class="projetos">
-                <div class="card">
-                    <div class="card-img-wrapper">
-                        <img src="img/proj1.png" alt="imagem do projeto agmtelecom" />
-                    </div>
-                    <div class="card-info">
-                        <h2>AGM telecom</h2>
-                        <h3>bootstrap 4</h3>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi velit ut omnis, rerum maxime
-                            beatae itaque aperiam quibusdam exercitationem commodi. Iste autem iusto veritatis, odit at
-                            odio modi. Delectus, perferendis!</p>
-                        <a href="http://www.agmtelecom.com.br" ><button class="btn">saiba mais</button></a>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-img-wrapper">
-                        <img src="img/proj2.png" alt="imagem do projeto loja gavony">
-                    </div>
-                    <div class="card-info">
-                        <h2>loja gavony</h2>
-                        <h3>HTML, CSS & JS</h3>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque quidem dolore pariatur
-                            ratione sit incidunt tempora earum vero culpa, ipsam doloribus suscipit dolorem fuga, ab
-                            sapiente velit, commodi inventore quae!</p>
-                        <button class="btn">saiba mais</button>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-img-wrapper">
-                        <img src="img/proj3.png" alt="imagem do projeto unhas patricia ribeiro">
-                    </div>
-                    <div class="card-info">
-                        <h2>unhas patricia ribeiro</h2>
-                        <h3>HTML, CSS, B4 & JS</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel ea earum sunt aliquid quasi fuga
-                            omnis id. Maxime totam atque quibusdam sed perspiciatis sunt laboriosam libero accusantium,
-                            numquam voluptatem? Incidunt.</p>
-                        <button class="btn">saiba mais</button>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- contatos -->
-        <section class="sessao-contato" id="contatos">
-            <div class="contato-wrapper">
-                <div class="contato-left">
-                </div>
-                <div class="contato-right">
-                    <h1>contato</h1>
-                    <form action="">
-                        <div class="input-group">
-                            <input type="text" class="field" id="nome">
-                            <label for="nome" class="field-label">nome</label>
-                        </div>
-                        <div class="input-group">
-                            <input type="text" class="field" id="email">
-                            <label for="email" class="field-label">e-mail</label>
-                        </div>
-                        <div class="input-group">
-                            <textarea class="field" id="mensagem"></textarea>
-                            <label for="mensagem" class="field-label">mensagem</label>
-                        </div>
-                        <button class="btn btn-contato">enviar</button>
-                    </form>
-                </div>
-            </div>
-        </section>
-
-        <!-- orçamento -->
-        <section class="sessao-orcamento" id="orcamento">
-            <div class="orcamento-wrapper">
-                <h1>faça um orçamento</h1>
-                <form action="">
-                    <label for="qtd">quantidade de paginas</label>
-                    <input type="number" min="1" max="10" name="qtd" id="qtd">
-                    <label for="js">preciso de um script</label>
-                    <input type="checkbox" name="js" id="js">
-                    <label for="">layout</label>
-                    <div class="group-layout">
-                        <div>
-                            <input type="radio" name="layout" id="layout-sim">
-                            <label for="layout-sim">preciso de um layout</label>
-                        </div>
-                        <div>
-                            <input type="radio" name="layout" id="layout-nao">
-                            <label for="layout-sim">já tenho um layout</label>
+    </header>
+    <main>
+        <div class="matriz" id="projects">
+            <div class="linha">
+                <div class="coluna-4">
+                    <div class="card-bg">
+                        <div class="card-project">
+                            <a href="projetos.html">
+                                <h1>The Last Fallen Overlord</h1>
+                                <h3>Game development</h3>
+                                <p>Um projeto de MMORPG focado em ações e decisões dentro e um mundo ficticio, onde sua classe é formada por seus atributos e equipamentos.</p>
+                            </a>
                         </div>
                     </div>
-                    <label for="prazo">prazo</label>
-                    <input type="range" name="prazo" id="prazo" min="1" max="10">
-                    <label class="preco" id="preco">R$ 0,00</label>
-                    <button type="submit" class="btn btn-orcamento">enviar</button>
-                </form>
-            </div>
-        </section>
-
-        <!-- rodape -->
-        <footer>
-            <div class="footer-content">
-                <p>
-                    copyright &copy; 2021, MJC WEB todos os direitos reservados.
-                </p>
-                <div class="social-list">
-                    <ul>
-                        <li><a href=""><i class="ico ion-social-facebook"></i></a></li>
-                        <li><a href=""><i class="ico ion-social-instagram"></i></a></li>
-                        <li><a href=""><i class="ico ion-social-twitter"></i></a></li>
-                    </ul>
+                </div>
+                <div class="coluna-4">
+                    <div class="card-bg">
+                        <div class="card-project">
+                            <a href="projetos.html"><h1>AGM Telecom</h1>
+                                <h3>Web design</h3>
+                                <p>Projeto de site de uma empresa de telecomunicações.</p></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="coluna-4">
+                    <div class="card-bg">
+                        <div class="card-project">
+                            <a href="projetos.html"><h1>Drop!</h1>
+                                <h3>Mini framework CSS</h3>
+                                <p>Projeto de framework CSS com grids e breakpoints para design responsivo.</p></a>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </footer>
-        <a href="#home" id="link-topo">
-            <i class="ico ion-arrow-up-c"></i>
-        </a>
-    </div>
-
+        </div>
+    </main>
 </body>
-
-<script src="script.js"></script>
 
 </html>
