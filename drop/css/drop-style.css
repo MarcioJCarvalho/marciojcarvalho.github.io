@@ -19,7 +19,6 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  height: 6.25rem;
 }
 
 .itens-menu nav ul {
@@ -135,10 +134,6 @@
   --transparente: rgba(88, 88, 88, 0.01);
 }
 
-
-header {
-  width: 100%;
-}
 
 /* DEMONSTRAÇÃO */
 .alinhar-conteudo-centro-x {
