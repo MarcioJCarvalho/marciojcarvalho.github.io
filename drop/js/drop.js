@@ -1,28 +1,36 @@
-// alterar tema de acordo com o tema padrão do usuario
-const prefersColorScheme = window.matchMedia('(prefers-color-scheme: dark)');
-function changeTheme(event) {
-  if( event.matches ) {
-    // O tema é o dark
-    darkMode();
-    console.log(event.matches );
-  } else {
-    // O tema é o light
-    console.log(event.matches );
-  }
+// verifica se o tema do usuario é dark
+const temaUsuario = window.matchMedia('(prefers-color-scheme: dark)');
+// pegando as variaveis de cores que foram definidas no root do style.css
+const html = document.querySelector("html");
+
+// pegando o style do css
+const getStyle = (element, style) =>
+  window
+    .getComputedStyle(element)
+    .getPropertyValue(style)
+
+const initialColors = {
+  bg: getStyle(html, "--bg"),
+  bgCard: getStyle(html, "--bg-card")
 }
 
-function darkMode(){
-  document.body.style.backgroundColor = '#1a1a1a';
+const darkMode = {
+  bg: "#1a1a1a",
+  bgCard: "1d1d1d"
 }
 
-function lightMode(){
-  document.body.style.backgroundColor = '#ebe8e8';
+// pega as chaves e insere -- e depois verifica tudo que começa com maiúscula seta o - antes e transforma para lowercase
+const transformKey = key => 
+  "--" + key.replace(/([A-Z])/, "-$1").toLowerCase()
+
+const changeTheme = (colors) => {
+  Object.keys(colors).map(key => 
+    html.style.setProperty(transformKey(key), colors[key])
+  )
 }
 
-// Escuta a mudança de tema no sistema
-//prefersColorScheme.addListener(changeTheme);
-
-// Altera o tema conforme o tema do usuário
-changeTheme(prefersColorScheme);
-
+// escuta a mudança do tema no sistema
+temaUsuario.addEventListener("change", (event) => {
+  event.matches ? changeTheme(darkMode) : changeTheme(initialColors)
+})
 

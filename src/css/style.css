@@ -22,12 +22,12 @@
     --cor-tercearia: #ededed;
     --cor-quaternaria: #1bd42e;
     --cor-quintenaria: #f6f6f6;
-    --bg-light: #ebe8e8;
-    --bg-dark: #1a1a1a;
+    --bg: #ebe8e8;
+    --bg-card: #f6f6f6;
 }
 
-.navbar {
-    
+html{
+    background-color: var(--bg);
 }
 
 .logo {
@@ -60,16 +60,16 @@
     color: var(--cor-secundaria);
 }
 
+.card{
+    background-color: var(--bg-card);
+}
 .card-home {
     border-radius: 8px;
-    background-color: var(--cor-quintenaria);
     /* offset-x | offset-y | blur-radius | spread-radius | color */
-    box-shadow: 0px 4px 4px 1px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 4px 4px 1px solid rgba(0, 0, 0, 0.25);
     margin: 20px auto;
-}
-
-.descricao {
-    
+    padding-left: 8rem;
+    padding-right: 8rem;
 }
 
 .descricao h1 {
@@ -77,7 +77,7 @@
     color: var(--cor-primaria);
     margin: .8rem;
     /*h-shadow v-shadow blur-radius color|none|initial|inherit;*/
-    text-shadow: -1px 1px .05em #404040;
+    text-shadow: -1px solid 1px solid .05em #404040;
 }
 
 .descricao p {
@@ -93,7 +93,7 @@
 
 .avatar {
     border-radius: 50%;
-    border: .5rem solid;
+    border: .8rem solid;
     border-color: var(--cor-primaria);
     height: 100%;
     width: 100%;
@@ -121,6 +121,7 @@
 
 .social ul li {
     list-style: none;
+    margin: 1rem;
 }
 
 .social img {
@@ -133,24 +134,15 @@
     filter: none;
 }
 
-.card-bg {
-    height: 150px;
-    border-radius: 8px;
-    background-color: var(--cor-quaternaria);
-    /* offset-x | offset-y | blur-radius | spread-radius | color */
-    box-shadow: 0px 4px 4px 1px rgba(0, 0, 0, 0.25);
-    margin: 20px auto;
-    position: relative;
-}
-
 .card-project {
-    height: 145px;
-    /* top-left | top-right | bottom-right | bottom-left */
-    border-radius: 0 0 8px 8px;
-    background-color: var(--cor-quintenaria);
-    position: absolute;
-    bottom: 0rem;
-    padding: 10px;
+    height: 150px;
+    width: 98%;
+    border: 1px solid var(--bg-card);
+    border-radius: 6px;
+    border-top-width: 6px;
+    border-top-color: var(--cor-quaternaria);
+    /* offset-x | offset-y | blur-radius | spread-radius | color */
+    box-shadow: 0px 4px 4px 1px solid rgba(0, 0, 0, 0.25); 
 }
 
 .card-project h1 {
